@@ -1,0 +1,109 @@
+/* Media Header */
+
+@media screen and (max-width: 330px){
+  .iam, .salut{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .iam, .salut{
+    font-size: 1.75rem;
+  }
+  .intro {
+    padding: 40px 50px;
+  }
+  .career .item .place{
+    display: block;
+  }
+  .citation{
+    font-size: 1.7rem;
+  }
+  .title_skills{
+    white-space: nowrap;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .iam, .salut{
+    font-size: 1.73rem;
+  }
+  header{
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .iam, .salut{
+    font-size: 2rem;
+  }
+  header{
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .iam, .salut{
+    font-size: 2rem;
+  }
+}
+
+/* Media Section */
+
+
+
+@media screen and (max-width: 480px){
+  section {
+    padding: 50px 35px;
+  }
+  /* .contenu {
+    padding-left: 30px;
+  } */
+}
+
+@media screen and (max-width: 768px){
+  section {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  section {
+    padding: 90px;
+  }
+}
+
+
+@media screen and (max-width: 630px){
+
+.skills .all_skills {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.skills .category_skills{
+  width: 47%;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+}
+
+@media screen and (max-width: 768px){
+
+  section h1 {
+    text-align: left;
+    width: auto;
+    white-space: nowrap;
+  }
+
+}
+
+@media screen and (max-width: 1024px){
+  
+  section h1 {
+    margin-right: 50px;
+  }
+
+}
