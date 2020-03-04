@@ -22,6 +22,12 @@
   .title_skills{
     white-space: nowrap;
   }
+  section {
+    padding: 50px 35px;
+  }
+  section .contenu {
+    padding-left: 10px;
+  }
 }
 
 
@@ -41,6 +47,9 @@
   header{
     max-width: 600px;
   }
+  section .contenu{
+    padding-top: 18px;
+  }
 }
 
 @media screen and (max-width: 1024px){
@@ -53,26 +62,17 @@
 
 
 
-@media screen and (max-width: 480px){
-  section {
-    padding: 50px 35px;
-  }
-  /* .contenu {
-    padding-left: 30px;
-  } */
-}
-
 @media screen and (max-width: 768px){
   section {
     display: block;
   }
 }
 
-@media screen and (max-width: 1024px){
+/* @media screen and (max-width: 1024px){
   section {
     padding: 90px;
   }
-}
+} */
 
 
 @media screen and (max-width: 630px){
@@ -101,9 +101,7 @@
 }
 
 @media screen and (max-width: 1024px){
-  
   section h1 {
     margin-right: 50px;
   }
-
 }
