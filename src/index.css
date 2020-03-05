@@ -62,11 +62,6 @@
 
 
 
-@media screen and (max-width: 768px){
-  section {
-    display: block;
-  }
-}
 
 /* @media screen and (max-width: 1024px){
   section {
@@ -76,18 +71,18 @@
 
 
 @media screen and (max-width: 630px){
-
-.skills .all_skills {
+  
+  .skills .all_skills {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-}
-
-.skills .category_skills{
-  width: 47%;
-  margin-right: 5px;
-  margin-bottom: 20px;
-}
-
+  }
+  
+  .skills .category_skills{
+    width: 47%;
+    margin-right: 5px;
+    margin-bottom: 20px;
+  }
+  
 }
 
 @media screen and (max-width: 768px){
@@ -98,6 +93,16 @@
     white-space: nowrap;
   }
 
+  section {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 890px){
+  section {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 1024px){
