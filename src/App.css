@@ -12,6 +12,13 @@ body, html, .body{
   /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
 }
 
+
+*, :after, :before {
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: border-box;
+}
+
 .intro{
   padding: 90px 100px;
   height: 100vh;
@@ -242,11 +249,6 @@ ul {
   font-weight: 700;
   margin: 0 15px;
   outline: 0;
-}
-
-*, :after, :before {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
 }
 
 .badge {
