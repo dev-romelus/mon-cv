@@ -23,7 +23,7 @@
     white-space: nowrap;
   }
   section {
-    padding: 50px 35px;
+    padding: 50px 35px !important;
   }
   section .contenu {
     padding-left: 10px;
@@ -58,17 +58,6 @@
     font-size: 2rem;
   }
 }
-
-/* Media Section */
-
-
-
-
-/* @media screen and (max-width: 1024px){
-  section {
-    padding: 90px;
-  }
-} */
 
 
 @media screen and (max-width: 630px){
