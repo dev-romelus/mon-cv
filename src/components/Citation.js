@@ -11,8 +11,9 @@ const Citation = () => {
             <h1>Citation</h1>
             <div className="contenu">
                 <div style={{color: theme.syntax }} className="citation">
-                    Vaut mieux être bien entouré qu'être seul.
+                    L'art de la réussite consiste à savoir s'entourer des meilleurs.
                 </div>
+                <div>De John Kennedy</div>
             </div>
         </section>
     )
