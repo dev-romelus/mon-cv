@@ -16,7 +16,7 @@ const Header = () => {
                 Je m'appelle
                 {'  '}
                 <span style={{color: theme.syntax, fontWeight:500}}>Romelus Jean-marie</span>, 
-                je suis un développeur Full-Stack
+                je suis un développeur
                 {' '}   
                 <span style={{color:'#f6b93b', fontWeight:600}}>JavaScript!</span>
             </h2>
