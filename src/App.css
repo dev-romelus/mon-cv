@@ -89,7 +89,7 @@ input:checked[type="checkbox"]::before{
   background: #171c28;
 }
 
-.switchToggle{
+/* .switchToggle{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,7 +109,7 @@ input:checked[type="checkbox"]::before{
   font-weight: 600;
   font-size: 20px;
   pointer-events: none;
-}
+} */
 
 input:checked[type="checkbox"]::before, .sun{
   color:#171c28;
@@ -169,8 +169,8 @@ section h1{
   text-transform: uppercase;
   text-align: right;
   font-weight: 700;
-  letter-spacing: 2px;
   font-size: 18px;
+  letter-spacing: 2px;
   margin-top: 0;
 }
 

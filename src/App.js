@@ -1,31 +1,29 @@
 import React from 'react';
 import './App.css';
-import Hearder from './components/Header';
-import About from './components/About';
-import Skills from './components/Skills';
-import Career from './components/Career';
-import Body from './components/Body';
-import SwitchToggle from './components/SwitchToggle';
-import Citation from './components/Citation';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-// Context
-import ThemeBodyProvider from './contexts/ThemeContext';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Home from './components/Home';
+import Contact from './components/Contact';
 
 function App() {
   return (
     <>
-      <ThemeBodyProvider>
-        <Body>
-          <SwitchToggle/>
-          <Hearder/>
-          <About/>
-          <Skills/>
-          <Career/>
-          <Citation/>
-          <Footer/>
-        </Body>
-      </ThemeBodyProvider>
+      <Router>
+        <Navbar/>
+        <Switch>
+          <Route path="/about" exact>
+            <About />
+          </Route>
+          <Route path="/home" exact>
+            <Home/>
+          </Route>
+          <Route path="/contact" exact>
+            <Contact/>
+          </Route>
+        </Switch>
+      </Router>
     </>
   );
 }
