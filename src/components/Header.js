@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <header className="intro">
             <h1 className="salut">
-                Salut <span>&#128515;</span>
+                <span role="img" aria-label="Hi">&#128515;</span>
             </h1>
             <h2 className="iam">
                 Je m'appelle

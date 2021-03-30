@@ -10,7 +10,7 @@ const Contact = ({ className }) => {
                 <div>
                     <img src={me} alt='me'/>
                     <div>
-                        Travaillons ensemble, envoyez-moi un message 📧
+                        Travaillons ensemble, envoyez-moi un message
                     </div>
                     <div>
                         <span>Address email: </span>
