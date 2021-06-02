@@ -1,55 +1,70 @@
 import React from 'react';
 import styled from 'styled-components';
-import me from '../assets/me.jpg';
+import sendFormHelpers from '../helpers/sendForm';
 
 const Contact = ({ className }) => {
+
+    function sendForm(e) {
+        e.preventDefault();
+
+        sendFormHelpers
+            .sendForm('template_1c78ino', e.target, () => {
+                alert('Your message has been sent!');
+            }, 
+            () => {
+                alert('Your message could not be sent.');
+            });
+
+        e.target.reset();
+    }
+
     return (
         <div className={className}>
-            <div>
-                <h1>Contactez moi</h1>
+            <form onSubmit={sendForm}>
+                <h1>Contacter moi</h1>
+
                 <div>
-                    <img src={me} alt='me'/>
-                    <div>
-                        Travaillons ensemble, envoyez-moi un message
-                    </div>
-                    <div>
-                        <span>Address email: </span>
-                        <a 
-                        style={{ color: 'inherit' }}
-                        href="mailto:romelusjeanmarie.pro@gmail.com">Contactez-moi</a>
-                    </div>
+                    <input name='name' type='text' placeholder='Entrer votre nom' required/>
                 </div>
-            </div>
+                <div>
+                    <input name='email' type='email' placeholder='Entrer votre email' required/>
+                </div>
+                <div>
+                    <textarea name='message' placeholder='Laisser un message ici...' rows="5" cols="33" required/>
+                </div>
+
+                <button type='submit'>Envoyer</button>
+
+            </form> 
         </div>
     )
 }
 
 const StyledContact = styled(Contact)`
     height: 100vh;
-    > div {
+    > form {
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        flex-direction: column;
         margin: auto;
-        max-width: 824px;
-        padding-top: 50px;
-        > h1 {
-            margin-top: 0;
-            color: #007bff !important;
-            text-transform: uppercase;
-            text-align: right;
-            font-weight: 700;
-            font-size: 18px;
-            letter-spacing: 2px;
-            margin-right: 64px;
-        }
-
+        max-width: 648px;
+        margin-top: 30px;
         > div {
-            > img {
-                height: 234px;
-                width: 224px;
+            > input, textarea  {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                margin-bottom: 12px;
+                outline: none;
             }
-            /* margin-left: 20px; */
+        }
+        > button {
+            background-color: #f6b93b;
+            padding: 10px;
+            border-radius: 4px;
+            outline: none;
+            border: none;
+            cursor: pointer;
         }
     }
 `;
